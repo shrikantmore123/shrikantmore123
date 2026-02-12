@@ -1,0 +1,14 @@
+<%- include('partials/header') %>
+
+    <section class="error-page section">
+        <div class="container">
+            <div class="error-content">
+                <h1 class="error-code"><%= typeof errorCode !== 'undefined' ? errorCode : '404' %></h1>
+                <h2 class="error-title">Oops! Page Not Found</h2>
+                <p class="error-message"><%= typeof errorMessage !== 'undefined' ? errorMessage : 'The page you are looking for does not exist.' %></p>
+                <a href="/" class="btn btn-primary">Go Back Home</a>
+            </div>
+        </div>
+    </section>
+
+<%- include('partials/footer') %>

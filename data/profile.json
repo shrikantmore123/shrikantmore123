@@ -1,0 +1,75 @@
+{
+  "name": "Shrikant More",
+  "title": "Full Stack Web Developer",
+  "intro": "Motivated third-year engineering student with strong foundations in Web Development, Java, and Backend Technologies",
+  "bio": "I'm a motivated third-year engineering student with strong foundations in Web Development, Java, and Backend Technologies. Experienced in building real-world projects using HTML, CSS, JavaScript, Node.js, Express, MongoDB, and React. Focused on creating scalable, user-centric applications. Passionate about learning industry-level tools and building impactful software products.",
+  "email": "shrikantmore008@gmail.com",
+  "phone": "9067319455",
+  "location": "Pune, Maharashtra, India",
+  "profileImage": "/images/profile.jpg",
+  "resumeFile": "/resume/Shrikant More.pdf",
+  "social": {
+    "github": "https://github.com/shrikantmore123",
+    "linkedin": "https://linkedin.com/in/shrikantmore123",
+    "email": "mailto:shrikantmore008@gmail.com"
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Engineering (B.E.) - Computer Engineering (Third Year, DSE)",
+      "school": "Sinhgad Institute of Technology, Lonavala",
+      "year": "2024 - Present",
+      "description": "SGPA: 8.18 (Sem III), 7.27 (Sem IV)"
+    },
+    {
+      "degree": "Diploma in Computer Science",
+      "school": "Karmayogi Institute of Technology, Shelave - Pandharpur",
+      "year": "2021-2024",
+      "description": "Percentage: 86.80%"
+    }
+  ],
+  "experience": [
+    {
+      "position": "Intern",
+      "company": "YugaYatra (OPC) Pvt Ltd",
+      "period": "12 Jan 2026 - 12 March 2026",
+      "description": "Gained hands-on experience in web development and software engineering practices. Worked on real-world projects and collaborated with the development team."
+    }
+  ],
+  "skills": {
+    "frontend": [
+      { "name": "HTML5", "level": 90 },
+      { "name": "CSS3", "level": 88 },
+      { "name": "JavaScript (ES6+)", "level": 85 },
+      { "name": "React", "level": 80 },
+      { "name": "Bootstrap", "level": 85 },
+      { "name": "Tailwind CSS", "level": 82 }
+    ],
+    "backend": [
+      { "name": "Node.js", "level": 85 },
+      { "name": "Express.js", "level": 88 },
+      { "name": "REST APIs", "level": 85 },
+      { "name": "MVC Architecture", "level": 82 },
+      { "name": "Middleware", "level": 80 }
+    ],
+    "databases": [
+      { "name": "MongoDB", "level": 85 },
+      { "name": "SQL", "level": 80 }
+    ],
+    "languages": [
+      { "name": "JavaScript", "level": 88 },
+      { "name": "Java", "level": 80 }
+    ],
+    "tools": [
+      { "name": "Git", "level": 90 },
+      { "name": "GitHub", "level": 90 },
+      { "name": "Postman", "level": 85 },
+      { "name": "VS Code", "level": 95 }
+    ],
+    "others": [
+      { "name": "OOP", "level": 82 },
+      { "name": "Computer Networks", "level": 75 },
+      { "name": "DBMS", "level": 80 },
+      { "name": "Operating Systems", "level": 75 }
+    ]
+  }
+}

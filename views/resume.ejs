@@ -1,0 +1,111 @@
+<%- include('partials/header') %>
+
+    <section class="resume-page section">
+        <div class="container">
+            <div class="resume-content">
+                <h1 class="page-title">Resume</h1>
+                <p class="page-subtitle">Download my resume or view it online</p>
+                
+                <div class="resume-download-section">
+                    <div class="resume-card">
+                        <div class="resume-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h2>Download Resume</h2>
+                        <p>Get a copy of my resume in PDF format</p>
+                        <% if (typeof profile !== 'undefined' && profile.resumeFile) { %>
+                        <a href="<%= profile.resumeFile %>" download class="btn btn-primary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Download PDF
+                        </a>
+                        <% } else { %>
+                        <p class="resume-note">Resume file will be available soon.</p>
+                        <% } %>
+                    </div>
+                </div>
+
+                <% if (typeof profile !== 'undefined') { %>
+                <div class="resume-details">
+                    <div class="resume-section">
+                        <h2>Contact Information</h2>
+                        <div class="contact-info">
+                            <% if (profile.email) { %>
+                            <p><strong>Email:</strong> <a href="mailto:<%= profile.email %>"><%= profile.email %></a></p>
+                            <% } %>
+                            <% if (profile.phone) { %>
+                            <p><strong>Phone:</strong> <a href="tel:<%= profile.phone %>"><%= profile.phone %></a></p>
+                            <% } %>
+                            <% if (profile.location) { %>
+                            <p><strong>Location:</strong> <%= profile.location %></p>
+                            <% } %>
+                        </div>
+                    </div>
+
+                    <% if (profile.experience && profile.experience.length > 0) { %>
+                    <div class="resume-section">
+                        <h2>Experience</h2>
+                        <% profile.experience.forEach(function(exp) { %>
+                        <div class="resume-item">
+                            <h3><%= exp.position %></h3>
+                            <p class="resume-meta"><%= exp.company %> | <%= exp.period %></p>
+                            <p><%= exp.description %></p>
+                        </div>
+                        <% }); %>
+                    </div>
+                    <% } %>
+
+                    <% if (profile.education && profile.education.length > 0) { %>
+                    <div class="resume-section">
+                        <h2>Education</h2>
+                        <% profile.education.forEach(function(edu) { %>
+                        <div class="resume-item">
+                            <h3><%= edu.degree %></h3>
+                            <p class="resume-meta"><%= edu.school %> | <%= edu.year %></p>
+                            <p><%= edu.description %></p>
+                        </div>
+                        <% }); %>
+                    </div>
+                    <% } %>
+
+                    <% if (profile.skills) { %>
+                    <div class="resume-section">
+                        <h2>Skills</h2>
+                        <div class="resume-skills">
+                            <% if (profile.skills.frontend && profile.skills.frontend.length > 0) { %>
+                            <div class="skill-group">
+                                <h4>Frontend:</h4>
+                                <p><%= profile.skills.frontend.map(s => s.name).join(', ') %></p>
+                            </div>
+                            <% } %>
+                            <% if (profile.skills.backend && profile.skills.backend.length > 0) { %>
+                            <div class="skill-group">
+                                <h4>Backend:</h4>
+                                <p><%= profile.skills.backend.map(s => s.name).join(', ') %></p>
+                            </div>
+                            <% } %>
+                            <% if (profile.skills.tools && profile.skills.tools.length > 0) { %>
+                            <div class="skill-group">
+                                <h4>Tools:</h4>
+                                <p><%= profile.skills.tools.map(s => s.name).join(', ') %></p>
+                            </div>
+                            <% } %>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </section>
+
+<%- include('partials/footer') %>

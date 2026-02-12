@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Link.Lite - Personal Bio Link Platform",
+      "description": "A Linktree-like web app that lets users create a single customizable profile page to share multiple links, manage them from a dashboard, and track basic engagement. Built with secure authentication and scalable backend architecture.",
+      "image": "images/project1.png",
+      "techStack": ["HTML5", "CSS3", "JavaScript", "EJS", "Node.js", "Express.js", "MongoDB", "bcrypt"],
+      "github": "https://github.com/shrikantmore123/",
+      "liveDemo": "https://github.com/shrikantmore123/",
+      "category": "Full Stack"
+    },
+    {
+      "id": 2,
+      "title": "Community Forum - Social Discussion Platform",
+      "description": "A community-driven forum platform for posting topics, discussions, and comments with moderation features to promote healthy and respectful conversations. Designed as a foundation for a larger mission-driven social network.",
+      "image": "images/project2.png",
+      "techStack": ["HTML5", "CSS3", "JavaScript", "EJS", "Node.js", "Express.js", "MongoDB", "REST APIs"],
+      "github": "https://github.com/shrikantmore123/community-forum",
+      "liveDemo": "https://github.com/shrikantmore123/community-forum",
+      "category": "Full Stack"
+    },
+    {
+      "id": 3,
+      "title": "Real-Time Tracker",
+      "description": "A real-time tracking system that captures and displays live location data of users or devices on an interactive map, enabling instant monitoring, movement history, and status updates with low latency communication.",
+      "image": "images/project3.png",
+      "techStack": ["HTML5", "CSS3", "JavaScript", "EJS", "Node.js", "Express.js", "Socket.io"],
+      "github": "https://github.com/shrikantmore123/Real-Time-Tracker",
+      "liveDemo": "https://github.com/shrikantmore123/Real-Time-Tracker",
+      "category": "Full Stack"
+    }
+  ]
+}
